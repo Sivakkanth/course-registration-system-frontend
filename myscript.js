@@ -16,7 +16,7 @@ function showCourses(){
 }
 
 function showStudents(){
-    fetch("http://localhost:8081/courses/enrolled") //API End point
+    fetch("https://localhost:7777/courses/enrolled") //API End point
     .then((response) => response.json()) //Http response into json object
     .then((students) => {
         const dataTable = document.getElementById("enrolledtable")
