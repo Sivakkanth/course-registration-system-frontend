@@ -1,5 +1,5 @@
 function showCourses(){
-    fetch("http://localhost:8081/courses")
+    fetch("https://localhost:7777/courses")
     .then((response) => response.json())
     .then((courses) => {
         const dataTable = document.getElementById("coursetable")
