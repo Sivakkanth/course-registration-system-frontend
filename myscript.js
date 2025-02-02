@@ -1,5 +1,5 @@
 function showCourses(){
-    fetch("https://localhost:7777/courses")
+    fetch("https://course-registration-system-backe-production.up.railway.app/courses")
     .then((response) => response.json())
     .then((courses) => {
         const dataTable = document.getElementById("coursetable")
@@ -16,7 +16,7 @@ function showCourses(){
 }
 
 function showStudents(){
-    fetch("https://localhost:7777/courses/enrolled") //API End point
+    fetch("https://course-registration-system-backe-production.up.railway.app/courses/enrolled") //API End point
     .then((response) => response.json()) //Http response into json object
     .then((students) => {
         const dataTable = document.getElementById("enrolledtable")
