@@ -61,7 +61,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
         const result = await response.json();
         localStorage.setItem("jwtToken", result.token); // Store token for future authenticated requests
-        localStorage.setItem("userEmail", result.emailId);
+        localStorage.setItem("useremail", result.emailId);
 
         // Redirect to dashboard
         window.location.href = "home.html";
