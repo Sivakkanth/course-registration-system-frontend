@@ -18,7 +18,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
     };
 
     try {
-        const response = await fetch("https://localhost:7777/api/v1/auth/signup", {
+        const response = await fetch("https://course-registration-system-backe-production.up.railway.app/api/v1/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

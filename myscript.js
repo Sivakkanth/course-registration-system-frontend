@@ -1,6 +1,6 @@
 function showCourses(){
-    // fetch("https://course-registration-system-backe-production.up.railway.app/courses")
-    fetch("https://localhost:7777/courses")
+    fetch("https://course-registration-system-backe-production.up.railway.app/courses")
+    // fetch("https://localhost:7777/courses")
     .then((response) => response.json())
     .then((courses) => {
         const dataTable = document.getElementById("coursetable")
@@ -18,7 +18,7 @@ function showCourses(){
 
 function showStudents(){
     // fetch("https://course-registration-system-backe-production.up.railway.app/courses/enrolled") //API End point
-    fetch("https://localhost:7777/courses/registered")
+    fetch("https://course-registration-system-backe-production.up.railway.app/courses/registered")
     .then((response) => response.json()) //Http response into json object
     .then((students) => {
         const dataTable = document.getElementById("enrolledtable")
@@ -47,7 +47,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     };
 
     try {
-        const response = await fetch("https://localhost:7777/api/v1/auth/signin", {
+        const response = await fetch("https://course-registration-system-backe-production.up.railway.app/api/v1/auth/signin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

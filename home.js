@@ -11,7 +11,7 @@ function Details() {
         return;
     }
 
-    fetch("https://localhost:7777/mydetails", {
+    fetch("https://course-registration-system-backe-production.up.railway.app/mydetails", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ function showMyCourses() {
         return;
     }
 
-    fetch(`https://localhost:7777/mycourses?emailId=${email}`, {
+    fetch(`https://course-registration-system-backe-production.up.railway.app/mycourses?emailId=${email}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     }
 
     // Send logout request to backend
-    fetch('https://localhost:7777/api/v1/auth/logout', {
+    fetch('https://course-registration-system-backe-production.up.railway.app/api/v1/auth/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

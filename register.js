@@ -18,7 +18,7 @@ document.getElementById("courseForm").addEventListener("submit", function(event)
 
 
     // Make the POST request to register the course
-    fetch("https://localhost:7777/course/apply", {
+    fetch("https://course-registration-system-backe-production.up.railway.app/course/apply", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",

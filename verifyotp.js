@@ -8,7 +8,7 @@ async function resendOTP() {
     }
 
     try {
-        const response = await fetch("https://localhost:7777/api/v1/otp/resendotp", {
+        const response = await fetch("https://course-registration-system-backe-production.up.railway.app/api/v1/otp/resendotp", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ "otpSendEmail": email })
@@ -37,7 +37,7 @@ document.getElementById("otpForm").addEventListener("submit", async function (ev
     }
 
     try {
-        const response = await fetch("https://localhost:7777/api/v1/otp/otpverification", {
+        const response = await fetch("https://course-registration-system-backe-production.up.railway.app/api/v1/otp/otpverification", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ "mail": email, "otp": otp })
