@@ -39,15 +39,12 @@
 </head>
     <body>
         <h2>Register Course</h2>
-        <form action="https://localhost:7777/courses/enrolled" method="post">
+        <form id="courseForm">
             <label for="name">Enter your name:</label><br>
-            <input type="text" name="name"><br><br>
-
-            <label for="email">Enter your emailId:</label><br>
-            <input type="email" name="emailId"><br><br>
+            <input type="text" name="name" id="name"><br><br>
 
             <label for="course">Choose a Course</label><br>
-            <select id="course" name="courseName">
+            <select name="courseName" id="courseName">
                 <option value="Next Js for front end">Next Js for front end</option>
                 <option value="SpringBoot for back end">SpringBoot for back end</option>
                 <option value="Database">Database</option>
@@ -58,5 +55,7 @@
             <button type="submit">Submit</button>
 
         </form>
+
+    <script src="register.js"></script>
     </body>
 </html>

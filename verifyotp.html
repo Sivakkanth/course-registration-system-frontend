@@ -57,22 +57,17 @@
     </head>
     <body>
         <h2>Verify OTP</h2>
-        <form action="https://course-registration-system-backe-production.up.railway.app/verify-otp" method="post">
+        <form id="otpForm">
             <label for="otp">Enter the OTP sent to your email/phone:</label><br>
             <input type="text" id="otp" name="otp" placeholder="Enter OTP" required><br><br>
 
-            <button type="submit"><a href="home.html">Verify OTP</a></button>
+            <button type="submit">Verify OTP</button>
         </form>
         <div>
             <p class="resend-otp" onclick="resendOTP()">Didn't receive the OTP? Resend</p>
         </div>
 
-        <script>
-            function resendOTP() {
-                // Add functionality to resend OTP
-                alert("OTP has been resent. Please check your email/phone.");
-                // You can make an API call here to resend the OTP
-            }
+        <script type="text/javascript" src="verifyotp.js">
         </script>
     </body>
 </html>

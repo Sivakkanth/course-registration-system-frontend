@@ -69,11 +69,12 @@
         
         <div class="container">
             <h2>Login</h2>
-            <form>
-                <input type="text" placeholder="Username or Email" required><br>
-                <input type="password" placeholder="Password" required><br>
-                <button type="submit"><a href="home.html">Login</a></button>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username or Email" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
             </form>
+            <p id="error-message" style="color: red; display: none;">Invalid credentials. Please try again.</p>
             <p>If you don't have an account, please <a href="signup.html">Sign Up</a></p>
             
             <h3>Or login with</h3>
@@ -82,5 +83,6 @@
                 <img id="facebook" src="images\facebook.png" alt="Facebook Login">
             </div>
         </div>
+        <script type="text/javascript" src="myscript.js"></script>
     </body>
 </html>
